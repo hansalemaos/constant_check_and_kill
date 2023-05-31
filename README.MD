@@ -68,8 +68,9 @@ constant_check_and_kill(
     Constantly checking if processes exist and kill them - CLI:
     This example shows how to use the script from the command line to continuously monitor and kill processes that match a
     specific executable path pattern. The command should be executed in the following format:
-
-    python .\constant_kill_procs.py --exe_path "(?:calculator.exe|chrome.exe)$" --is_regex 1 --flags 2 --delay 0.1 --close_after_first 0
+    
+    # adjust the path
+    python "C:\ProgramData\anaconda3\envs\dfdir\Lib\site-packages\constant_check_and_kill\__init__.py" --exe_path "(?:calculator.exe|chrome.exe)$" --is_regex 1 --flags 2 --delay 0.1 --close_after_first 0
     --exe_path: The regular expression pattern specifying the executable path(s) of the target processes.
     --is_regex: A flag indicating whether the exe_path argument should be treated as a regular expression (1 for True, 0 for False).
     --flags: Additional flags for the regular expression pattern matching.
